@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo 3 - Desafio 2</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <button id="siguiente">
+        Siguiente
+    </button>
+    <header>
+        <h1> Modulo 3 Desafio 2 : Condiciones</h1>
+    </header>
+    <section class="part1">
+        <h2>Parte 1: Bordes de imagen</h2>
+
+        <div class="imagen">
+            <h3>Haz click en la imagen</h3>
+            <img id="imagen1" src="assets/img/imagen1.jpg" alt="imagen 1" onclick=bordeImagen()>
+        </div>
+    </section>
+
+    <section class="part2">
+        <h2>Parte 2: Totales</h2>
+        <div class="containerStickers">
+            <h3>Escoje a lo mas 10 stickers:</h3>
+            <div class="stickers">
+                <div class="itemStickers">
+                    <img src="assets/img/sticker1.png" alt="imagen 1">
+                    <input type="number" min="0" id="cant1" onchange=sumaStickers()>
+                </div>
+                <div class="itemStickers">
+                    <img src="assets/img/stickers2.png" alt="imagen 1">
+                    <input type="number" min="0" id="cant2" onchange=sumaStickers()>
+                </div>
+                <div class="itemStickers">
+                    <img src="assets/img/sticker3.png" alt="imagen 1">
+                    <input type="number" min="0" id="cant3" onchange=sumaStickers()>
+                </div>
+            </div>
+            <p id="total">Aún no escojes ningún stickers</p>
+        </div>
+    </section>
+    <section class="part3">
+        <h2>Parte 3: Password </h2>
+        <div class="containerPass">
+        <h3>Escoja los 3 digitos de su Password</h3>
+        <div class="pass">
+            <select name="" id="digito1" class="digitoPass">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="" id="digito2" class="digitoPass">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select name="" id="digito3" class="digitoPass">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+        <button onclick=" verificarPass() ">Ingresar</button>
+        <p id="mensajePassword"></p>
+    </div>
+    </section>
+</body>
+<script src="assets/js/main.js"></script>
+
+</html>
