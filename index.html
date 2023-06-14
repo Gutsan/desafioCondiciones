@@ -10,13 +10,18 @@
 </head>
 
 <body>
-    <button id="siguiente">
-        Siguiente
-    </button>
+
     <header>
         <h1> Modulo 3 Desafio 2 : Condiciones</h1>
+        <nav>
+            <ul>
+                <li><a href="#part1">parte 1</a></li>
+                <li><a href="#part2">parte 2</a></li>
+                <li><a href="#part3">parte 3</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="part1">
+    <section class="part1" id="part1">
         <h2>Parte 1: Bordes de imagen</h2>
 
         <div class="imagen">
@@ -25,7 +30,7 @@
         </div>
     </section>
 
-    <section class="part2">
+    <section class="part2" id="part2">
         <h2>Parte 2: Totales</h2>
         <div class="containerStickers">
             <h3>Escoje a lo mas 10 stickers:</h3>
@@ -46,48 +51,48 @@
             <p id="total">Aún no escojes ningún stickers</p>
         </div>
     </section>
-    <section class="part3">
+    <section class="part3" id="part3">
         <h2>Parte 3: Password </h2>
         <div class="containerPass">
-        <h3>Escoja los 3 digitos de su Password</h3>
-        <div class="pass">
-            <select name="" id="digito1" class="digitoPass">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-            </select>
-            <select name="" id="digito2" class="digitoPass">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-            </select>
-            <select name="" id="digito3" class="digitoPass">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-            </select>
+            <h3>Escoja los 3 digitos de su Password</h3>
+            <div class="pass">
+                <select name="" id="digito1" class="digitoPass">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select name="" id="digito2" class="digitoPass">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select name="" id="digito3" class="digitoPass">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            <button onclick=" verificarPass() ">Ingresar</button>
+            <p id="mensajePassword"></p>
         </div>
-        <button onclick=" verificarPass() ">Ingresar</button>
-        <p id="mensajePassword"></p>
-    </div>
     </section>
 </body>
 <script src="assets/js/main.js"></script>

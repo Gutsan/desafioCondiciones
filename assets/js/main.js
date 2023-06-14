@@ -16,9 +16,10 @@ function sumaStickers() {
     let cant1 = document.querySelector("#cant1")
     let cant2 = document.querySelector("#cant2")
     let cant3 = document.querySelector("#cant3")
+
     //Variable de parrafo resumen
     let pTotal = document.querySelector("#total")
-
+    
     let suma = Number(cant1.value) + Number(cant2.value) + Number(cant3.value)
 
     if (suma === 0) {
